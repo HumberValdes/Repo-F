@@ -65,11 +65,11 @@ namespace FERRETERÍA
             SqlParameter paremail = new SqlParameter("@Email", SqlDbType.VarChar);
             SqlParameter parRfc = new SqlParameter("@Rfc", SqlDbType.VarChar);
             parIdCliente.Value = Convert.ToInt32(txtidcliente.Text);
-            parNombre.Value = txtnombre.Text;
-            parDirección.Value = txtnombre.Text;
-            partelefono.Value = txtnombre.Text;
-            paremail.Value = txtnombre.Text;
-            parRfc.Value = txtnombre.Text;
+            parNombre.Value =txtnombre.Text;
+            parDirección.Value = txtdireccion.Text;
+            partelefono.Value = txttelefono.Text;
+            paremail.Value =txtemail.Text;
+            parRfc.Value = txtrfc.Text;
             cmd.Parameters.Add(parIdCliente);
             cmd.Parameters.Add(parNombre);
             cmd.Parameters.Add(parDirección);
